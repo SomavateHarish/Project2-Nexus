@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<!-- Coding By CodingNepal - codingnepalweb.com -->
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="otp.css">
+   <title>OTP Verification Form</title>
+    <link rel="stylesheet" href="style.css" />
+    <!-- Boxicons CSS -->
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+  </head>
+
+  <body>
+
+    <script>
+        function validateEmail () {
+            // Get the input element by id
+            var email = document.getElementById ("otpemail");
+            // Get the input value
+            var emailValue = email.value;
+            // If the input value is empty, show an alert
+            if (emailValue == "" || emailValue.length <= 0) {
+              document.getElementById("otpemail").style.border = "1px solid red";  
+              var loginForm = document.getElementById("otpemail");
+            loginForm.classList.remove('shake_effect');
+            setTimeout(function () {
+                loginForm.classList.add('shake_effect');
+            }, 1);
+            }
+            // Else, proceed to the next page
+            else {
+              window.location.href = "otp.html";
+            }
+          }
+    </script>
+
+    <div class="container">
+      <div class="">
+      <img src="eotp.gif" alt="" class="eimg">
+      </div>
+    <form action="#"></form>
+      <div> 
+        <input type="email" placeholder=" Email" class="input" id="otpemail"><br><br>
+      </div>  
+        <button class="sendotp" onclick="validateEmail()">Send OTP</button>
+      </form>
+    </div>
+  </body>
+</html>

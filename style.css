@@ -1,0 +1,126 @@
+@import "compass/css3";
+
+
+body{
+    background-image: linear-gradient(to right, #74ebd5 0%, #9face6 100%);
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+.login{
+    width: 340px;
+    height: 420px;
+    border-radius: 10px;
+    background-color: rgb(255, 255, 255);
+    margin-top: 10%;
+    margin-bottom: 10%;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    box-shadow: 0px 0px 5px 0px;
+}
+
+.loginbtn{
+    width: 100px;
+    height: 30px;
+    margin-left: 52px;
+    border-radius: 5px;
+    border-color: transparent;
+    background-color: rgb(85 176 234 / 71%);
+    cursor: pointer;
+}
+
+.loginbtn:hover{
+    background-color: rgba(0, 157, 255, 0.71);
+}
+
+.input{
+    width: 200px;
+    height: 26px;
+    border-radius: 3px;
+    border: transparent;
+    background-color: #ccf7f896;
+    box-shadow: 0px 0px 2px 0px;
+     &:focus, &:focus + .fa{
+        border-color:#10CE88;
+        color:#10CE88;
+
+      }
+}
+
+.loginother{
+    width: 200px;
+    border-color: transparent;
+    background-color: #b6cbfd;
+    border-radius: 5px;
+}
+
+.shake_effect
+{
+ animation: shake 1s ;
+}
+@keyframes shake 
+{
+ 10%, 90% 
+ {
+  transform: translate3d(-1px, 0, 0);
+ }
+  
+ 20%, 80% 
+ {
+  transform: translate3d(2px, 0, 0);
+ }
+
+ 30%, 50%, 70% 
+ {
+  transform: translate3d(-4px, 0, 0);
+ }
+
+ 40%, 60% 
+ {
+  transform: translate3d(4px, 0, 0);
+ }
+}
+
+.lhead{
+    margin-left: 60px;
+    color: rgb(72, 66, 237)0, 102, 255;
+}
+
+.otp{
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.otpn{
+    width: 20px;
+    height: 20px;
+    background-color: #f68084;
+}
+
+.forpass{
+    font-size: 13px;
+    margin-left: 120px;
+}
+@media screen and (max-width:767px) {
+    .login{
+        margin-top: 38%;
+        margin-bottom: 70%;
+        width: 270px;
+        height: 340px;
+    }
+    .container{
+        margin-top: 38%;
+        margin-bottom: 70%;
+        width: 270px;
+        height: 340px;
+    }
+    .container h4 {
+    font-size: 1.13rem;
+    color: #333;
+    font-weight: 500;
+}
+}
